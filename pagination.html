@@ -1,0 +1,105 @@
+<head>
+    <style>
+        .grid-item1 {
+            grid-area: menu;
+        }
+
+        .grid-item2 {
+            grid-area: header;
+        }
+
+        .grid-item3 {
+            grid-area: main;
+        }
+
+        .grid-item4 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template:
+                'header header header header header'
+                'menu main main main main'
+                'menu footer footer footer footer';
+
+            background-color: rgba(255, 166, 0, 0);
+
+            padding: 10px;
+        }
+
+        .grid-container div {
+
+            background-color: rgb(0, 157, 255);
+            text-align: center;
+            padding: 20px;
+            border: 1px solid rgb(0, 106, 255);
+        }
+    </style>
+
+    <title> nature very cool</title>
+    
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item1"> <h4> Home </h4>
+            <h4> sign in/log in</h4>
+            <h4> Book Flight</h4>
+            <h4> Settings</h4>
+            <h4> Account</h4>
+        </div>
+
+
+
+        <div class="grid-item2"> <div class="container-fluid bg-primary text-white p-4">
+            <h1> Australia Air </h1>
+        </div></div>
+        
+
+
+        <div class="grid-item3"> 
+            
+            <h1> Welcome to our Website!</h1> <img src="Hopetoun_falls.jpg"> <button type="button" class="btn btn-light"> Book your first Flight! </button></div>
+        <div class="grid-item4">
+            
+            <h2> Thank you for Visiting with us! </h2> <ul class="pagination">
+
+
+            <li class="page-item">
+                <a class="page-link" href="https://en.wikipedia.org/wiki/Australia"> < </a>
+            </li>
+        
+            <li class="page-item">
+                <a class="page-link" href="NATURE.html"> 1 </a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="pagination.html"> 2 </a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="https://www.britannica.com/place/Australia"> >  </a>
+            </li>
+
+
+        </ul> 
+    </div>
+
+
+
+</body>
