@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+ <title> make chnages to rectangle</title>
+
+ <style>
+
+  h2 {
+
+   text-align: center;
+  }
+
+  .rectangle {
+
+    border: 5px solid navy;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+  }
+
+  .buttons {
+
+    
+    float: center;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+  }
+
+ </style>
+</head>
+
+<body>
+
+  <h2> make changes to the rectangle</h2>
+
+  <div class="rectangle"> </div>
+
+  <div class="buttons"> 
+    <button onclick="changeToCircle()">Make circle</button>
+    <button onclick="hideRect()"> hide </button>
+    <button onclick="showRect()"> show </button>
+  </div>
+
+  <script>
+
+   let div = document.querySelector(".rectangle");
+
+   function changeToCircle(){
+
+    div.style.borderRadius = "50%";
+
+   }
+
+   function hideRect(){
+
+    div.style.display = "none";
+
+   }
+
+   function showRect() {
+
+    div.style.display = "block";
+
+   }
+
+    div.onmouseenter = function() {
+
+      div.style.background = "blue"
+
+    }
+
+    div.onmouseleave = function() {
+
+      div.style.background = "transparent"
+    }
+    
+
+  </script>
+
+
+
+
+</body>
+
+</html>
